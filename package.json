@@ -1,6 +1,6 @@
 {
   "name": "extend-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Port of jQuery.extend for node.js and browser.",
   "main": "extend.js",
   "scripts": {

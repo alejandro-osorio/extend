@@ -25,8 +25,9 @@ function extend() {
         copy = options[name];
 
         // Prevent never-ending loop
-        if (target === copy)
+        if (target === copy) {
           continue;
+        }
 
         // Recurse if we're merging plain objects or arrays
         if (deep && copy && (copy.constructor == Object || copy.constructor == Array)) {
@@ -47,5 +48,6 @@ function extend() {
 }
 
 // CommonJS
-if (typeof module != 'undefined' && module.exports)
+if (typeof module != 'undefined' && module.exports) {
   module.exports = extend;
+}
